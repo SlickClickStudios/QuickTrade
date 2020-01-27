@@ -1,0 +1,12 @@
+/* 
+ Localised.strings file
+ */
+
+/// Service Errors
+"incorrectRequestErrorMessage" = "Please check your request and try again.";
+"genericErrorMessage" = "Something went wrong. Please try again.";
+
+
+
+/// Mock testing errors
+"jsonNotFoundMessage" = "Unable to find mock json.";

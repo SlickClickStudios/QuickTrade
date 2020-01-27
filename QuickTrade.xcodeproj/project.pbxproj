@@ -13,8 +13,25 @@
 		18258B0623DE49E4008BC327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18258B0423DE49E4008BC327 /* Main.storyboard */; };
 		18258B0823DE49E5008BC327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18258B0723DE49E5008BC327 /* Assets.xcassets */; };
 		18258B0B23DE49E5008BC327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18258B0923DE49E5008BC327 /* LaunchScreen.storyboard */; };
-		18258B1623DE49E5008BC327 /* QuickTradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B1523DE49E5008BC327 /* QuickTradeTests.swift */; };
 		18258B2123DE49E5008BC327 /* QuickTradeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B2023DE49E5008BC327 /* QuickTradeUITests.swift */; };
+		18258B7623DE4D05008BC327 /* QuickTradeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B7523DE4D05008BC327 /* QuickTradeEndpoint.swift */; };
+		18258B7823DE4FBB008BC327 /* ServiceRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B7723DE4FBB008BC327 /* ServiceRequestBuilder.swift */; };
+		18258B7A23DE538F008BC327 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B7923DE538F008BC327 /* ServiceError.swift */; };
+		18258B7C23DE53D7008BC327 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B7B23DE53D7008BC327 /* Result.swift */; };
+		18258B7E23DE5439008BC327 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B7D23DE5439008BC327 /* Network.swift */; };
+		18258B8223DE5796008BC327 /* OrderServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B8123DE5796008BC327 /* OrderServiceProvider.swift */; };
+		18258B8423DE585F008BC327 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B8323DE585F008BC327 /* OrderService.swift */; };
+		18258B8A23DE5B9C008BC327 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18258B8823DE5B9B008BC327 /* Localizable.strings */; };
+		18258B8C23DE5BEC008BC327 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B8B23DE5BEC008BC327 /* LocalizedString.swift */; };
+		18258B9023DE67E6008BC327 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B8F23DE67E6008BC327 /* Rates.swift */; };
+		18258B9523DE69FB008BC327 /* OrderServiceNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B9423DE69FB008BC327 /* OrderServiceNetworkTests.swift */; };
+		18258B9723DE6E0A008BC327 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B9623DE6E0A008BC327 /* JSONDecoder+Extensions.swift */; };
+		18258B9923DE72C2008BC327 /* OrderServiceStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B9823DE72C2008BC327 /* OrderServiceStubs.swift */; };
+		18258B9B23DE7301008BC327 /* MockOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B9A23DE7301008BC327 /* MockOrderService.swift */; };
+		18258B9F23DE7476008BC327 /* tickerSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 18258B9D23DE7476008BC327 /* tickerSuccess.json */; };
+		18258BA023DE7476008BC327 /* tickerMalformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 18258B9E23DE7476008BC327 /* tickerMalformed.json */; };
+		18258BA323DE7E99008BC327 /* OrderServiceMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */; };
+		18258BA523DE8ED5008BC327 /* ServiceErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +61,28 @@
 		18258B0A23DE49E5008BC327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18258B0C23DE49E5008BC327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18258B1123DE49E5008BC327 /* QuickTradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18258B1523DE49E5008BC327 /* QuickTradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTradeTests.swift; sourceTree = "<group>"; };
 		18258B1723DE49E5008BC327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18258B1C23DE49E5008BC327 /* QuickTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18258B2023DE49E5008BC327 /* QuickTradeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTradeUITests.swift; sourceTree = "<group>"; };
 		18258B2223DE49E5008BC327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18258B7523DE4D05008BC327 /* QuickTradeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTradeEndpoint.swift; sourceTree = "<group>"; };
+		18258B7723DE4FBB008BC327 /* ServiceRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestBuilder.swift; sourceTree = "<group>"; };
+		18258B7923DE538F008BC327 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		18258B7B23DE53D7008BC327 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		18258B7D23DE5439008BC327 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		18258B8123DE5796008BC327 /* OrderServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceProvider.swift; sourceTree = "<group>"; };
+		18258B8323DE585F008BC327 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		18258B8823DE5B9B008BC327 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		18258B8B23DE5BEC008BC327 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		18258B8F23DE67E6008BC327 /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		18258B9423DE69FB008BC327 /* OrderServiceNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceNetworkTests.swift; sourceTree = "<group>"; };
+		18258B9623DE6E0A008BC327 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		18258B9823DE72C2008BC327 /* OrderServiceStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceStubs.swift; sourceTree = "<group>"; };
+		18258B9A23DE7301008BC327 /* MockOrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOrderService.swift; sourceTree = "<group>"; };
+		18258B9D23DE7476008BC327 /* tickerSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickerSuccess.json; sourceTree = "<group>"; };
+		18258B9E23DE7476008BC327 /* tickerMalformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickerMalformed.json; sourceTree = "<group>"; };
+		18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceMockTests.swift; sourceTree = "<group>"; };
+		18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +133,11 @@
 		18258AFD23DE49E4008BC327 /* QuickTrade */ = {
 			isa = PBXGroup;
 			children = (
-				18258B2F23DE4A6F008BC327 /* Feature */,
-				18258B2E23DE4A6A008BC327 /* Domain */,
 				18258AFE23DE49E4008BC327 /* AppDelegate.swift */,
 				18258B0023DE49E4008BC327 /* SceneDelegate.swift */,
 				18258B0223DE49E4008BC327 /* ViewController.swift */,
+				18258B2F23DE4A6F008BC327 /* Feature */,
+				18258B2E23DE4A6A008BC327 /* Domain */,
 				18258B0723DE49E5008BC327 /* Assets.xcassets */,
 				18258B0923DE49E5008BC327 /* LaunchScreen.storyboard */,
 				18258B0C23DE49E5008BC327 /* Info.plist */,
@@ -114,7 +148,8 @@
 		18258B1423DE49E5008BC327 /* QuickTradeTests */ = {
 			isa = PBXGroup;
 			children = (
-				18258B1523DE49E5008BC327 /* QuickTradeTests.swift */,
+				18258B9123DE69B9008BC327 /* Feature */,
+				18258B9223DE69C0008BC327 /* Domain */,
 				18258B1723DE49E5008BC327 /* Info.plist */,
 			);
 			path = QuickTradeTests;
@@ -135,6 +170,7 @@
 				18258B7223DE4BCB008BC327 /* Network */,
 				18258B7123DE4BC8008BC327 /* Service */,
 				18258B7023DE4B0A008BC327 /* Models */,
+				18258B9623DE6E0A008BC327 /* JSONDecoder+Extensions.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -183,6 +219,9 @@
 		18258B7023DE4B0A008BC327 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18258B7923DE538F008BC327 /* ServiceError.swift */,
+				18258B7B23DE53D7008BC327 /* Result.swift */,
+				18258B8F23DE67E6008BC327 /* Rates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +229,8 @@
 		18258B7123DE4BC8008BC327 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				18258B8123DE5796008BC327 /* OrderServiceProvider.swift */,
+				18258B8323DE585F008BC327 /* OrderService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -197,6 +238,9 @@
 		18258B7223DE4BCB008BC327 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				18258B7523DE4D05008BC327 /* QuickTradeEndpoint.swift */,
+				18258B7723DE4FBB008BC327 /* ServiceRequestBuilder.swift */,
+				18258B7D23DE5439008BC327 /* Network.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -204,6 +248,8 @@
 		18258B7323DE4BE0008BC327 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				18258B8823DE5B9B008BC327 /* Localizable.strings */,
+				18258B8B23DE5BEC008BC327 /* LocalizedString.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -214,6 +260,51 @@
 				18258B0423DE49E4008BC327 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		18258B9123DE69B9008BC327 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		18258B9223DE69C0008BC327 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				18258BA623DE8EE2008BC327 /* Models */,
+				18258BA123DE7E56008BC327 /* OrderService */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		18258B9C23DE7435008BC327 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				18258B9D23DE7476008BC327 /* tickerSuccess.json */,
+				18258B9E23DE7476008BC327 /* tickerMalformed.json */,
+				18258B9823DE72C2008BC327 /* OrderServiceStubs.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		18258BA123DE7E56008BC327 /* OrderService */ = {
+			isa = PBXGroup;
+			children = (
+				18258B9A23DE7301008BC327 /* MockOrderService.swift */,
+				18258B9423DE69FB008BC327 /* OrderServiceNetworkTests.swift */,
+				18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */,
+				18258B9C23DE7435008BC327 /* Stubs */,
+			);
+			path = OrderService;
+			sourceTree = "<group>";
+		};
+		18258BA623DE8EE2008BC327 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18258B0B23DE49E5008BC327 /* LaunchScreen.storyboard in Resources */,
+				18258B8A23DE5B9C008BC327 /* Localizable.strings in Resources */,
 				18258B0823DE49E5008BC327 /* Assets.xcassets in Resources */,
 				18258B0623DE49E4008BC327 /* Main.storyboard in Resources */,
 			);
@@ -330,6 +422,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18258B9F23DE7476008BC327 /* tickerSuccess.json in Resources */,
+				18258BA023DE7476008BC327 /* tickerMalformed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +441,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18258B7A23DE538F008BC327 /* ServiceError.swift in Sources */,
+				18258B8223DE5796008BC327 /* OrderServiceProvider.swift in Sources */,
+				18258B8C23DE5BEC008BC327 /* LocalizedString.swift in Sources */,
 				18258B0323DE49E4008BC327 /* ViewController.swift in Sources */,
+				18258B7E23DE5439008BC327 /* Network.swift in Sources */,
+				18258B9023DE67E6008BC327 /* Rates.swift in Sources */,
+				18258B7623DE4D05008BC327 /* QuickTradeEndpoint.swift in Sources */,
+				18258B7823DE4FBB008BC327 /* ServiceRequestBuilder.swift in Sources */,
+				18258B8423DE585F008BC327 /* OrderService.swift in Sources */,
+				18258B7C23DE53D7008BC327 /* Result.swift in Sources */,
 				18258AFF23DE49E4008BC327 /* AppDelegate.swift in Sources */,
+				18258B9723DE6E0A008BC327 /* JSONDecoder+Extensions.swift in Sources */,
 				18258B0123DE49E4008BC327 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +461,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18258B1623DE49E5008BC327 /* QuickTradeTests.swift in Sources */,
+				18258BA323DE7E99008BC327 /* OrderServiceMockTests.swift in Sources */,
+				18258B9923DE72C2008BC327 /* OrderServiceStubs.swift in Sources */,
+				18258B9523DE69FB008BC327 /* OrderServiceNetworkTests.swift in Sources */,
+				18258BA523DE8ED5008BC327 /* ServiceErrorTests.swift in Sources */,
+				18258B9B23DE7301008BC327 /* MockOrderService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
