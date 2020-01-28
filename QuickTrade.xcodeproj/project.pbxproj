@@ -31,6 +31,8 @@
 		18258BA023DE7476008BC327 /* tickerMalformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 18258B9E23DE7476008BC327 /* tickerMalformed.json */; };
 		18258BA323DE7E99008BC327 /* OrderServiceMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */; };
 		18258BA523DE8ED5008BC327 /* ServiceErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */; };
+		18BD7ECE23E04E8B009C374A /* OrderTicketViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD7ECD23E04E8B009C374A /* OrderTicketViewModelTests.swift */; };
+		18BD7ED123E051CD009C374A /* PricePanelViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BD7ED023E051CD009C374A /* PricePanelViewModelTests.swift */; };
 		18C0A19A23DF970000770E4A /* PricePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A19923DF970000770E4A /* PricePanelView.swift */; };
 		18C0A1A123DF97CD00770E4A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1A023DF97CD00770E4A /* UIView+Extension.swift */; };
 		18C0A1A323DF980C00770E4A /* PricePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C0A1A223DF980C00770E4A /* PricePanelView.xib */; };
@@ -95,6 +97,8 @@
 		18258B9E23DE7476008BC327 /* tickerMalformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickerMalformed.json; sourceTree = "<group>"; };
 		18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceMockTests.swift; sourceTree = "<group>"; };
 		18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorTests.swift; sourceTree = "<group>"; };
+		18BD7ECD23E04E8B009C374A /* OrderTicketViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTicketViewModelTests.swift; sourceTree = "<group>"; };
+		18BD7ED023E051CD009C374A /* PricePanelViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricePanelViewModelTests.swift; sourceTree = "<group>"; };
 		18C0A19923DF970000770E4A /* PricePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricePanelView.swift; sourceTree = "<group>"; };
 		18C0A1A023DF97CD00770E4A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		18C0A1A223DF980C00770E4A /* PricePanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PricePanelView.xib; sourceTree = "<group>"; };
@@ -192,10 +196,10 @@
 		18258B2E23DE4A6A008BC327 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				18BD7ED223E05374009C374A /* Extensions */,
 				18258B7223DE4BCB008BC327 /* Network */,
 				18258B7123DE4BC8008BC327 /* Service */,
 				18258B7023DE4B0A008BC327 /* Models */,
-				18258B9623DE6E0A008BC327 /* JSONDecoder+Extensions.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -303,6 +307,7 @@
 		18258B9123DE69B9008BC327 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				18BD7ECF23E051BD009C374A /* Models */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -343,6 +348,23 @@
 				18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		18BD7ECF23E051BD009C374A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18BD7ECD23E04E8B009C374A /* OrderTicketViewModelTests.swift */,
+				18BD7ED023E051CD009C374A /* PricePanelViewModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18BD7ED223E05374009C374A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18258B9623DE6E0A008BC327 /* JSONDecoder+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		18C0A19F23DF97A400770E4A /* Extensions */ = {
@@ -532,6 +554,8 @@
 				18258BA323DE7E99008BC327 /* OrderServiceMockTests.swift in Sources */,
 				18258B9923DE72C2008BC327 /* OrderServiceStubs.swift in Sources */,
 				18258B9523DE69FB008BC327 /* OrderServiceNetworkTests.swift in Sources */,
+				18BD7ED123E051CD009C374A /* PricePanelViewModelTests.swift in Sources */,
+				18BD7ECE23E04E8B009C374A /* OrderTicketViewModelTests.swift in Sources */,
 				18258BA523DE8ED5008BC327 /* ServiceErrorTests.swift in Sources */,
 				18258B9B23DE7301008BC327 /* MockOrderService.swift in Sources */,
 			);

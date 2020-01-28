@@ -31,7 +31,7 @@ class ProductsViewController: UIViewController {
         orderTicketViewController.orderTicketViewModel = OrderTicketViewModel()
         
         orderTicketViewController.modalPresentationStyle = .fullScreen
-        navigationController?.present(orderTicketViewController, animated: true, completion: nil)
+        navigationController?.present(orderTicketViewController, animated: false, completion: nil)
         self.orderTicketViewController = orderTicketViewController
     }
 }
