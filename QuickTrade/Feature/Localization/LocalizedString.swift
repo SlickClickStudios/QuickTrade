@@ -10,6 +10,11 @@ import UIKit
 
 enum LocalizedString: CustomStringConvertible {
     /// UI
+    case comingSoonAlertTitle
+    case featureAvailiabilityAlertMessage
+    
+    case buyTitle
+    case sellTitle
     case cancelTitle
     case confirmTitle
     case stopLossTitle
@@ -28,14 +33,22 @@ enum LocalizedString: CustomStringConvertible {
     var description: String {
         switch self {
         /// UI
+        case .comingSoonAlertTitle:
+            return localizeString("comingSoonAlertTitle", comment: "Coming soon alert title")
+        case .featureAvailiabilityAlertMessage:
+            return localizeString("featureAvailiabilityAlertMessage", comment: "Feature availiability alert message.")
+        case .buyTitle:
+            return localizeString("buyTitle", comment: "Buy title")
+        case .sellTitle:
+            return localizeString("sellTitle", comment: "Sell title")
         case .cancelTitle:
             return localizeString("cancelTitle", comment: "Cancel title")
         case .confirmTitle:
             return localizeString("confirmTitle", comment: "Confirm title")
         case .stopLossTitle:
-             return localizeString("stopLossTitle", comment: "Stop Loss title")
+            return localizeString("stopLossTitle", comment: "Stop Loss title")
         case .takeProfitTitle:
-             return localizeString("takeProfitTitle", comment: "Take Profit title")
+            return localizeString("takeProfitTitle", comment: "Take Profit title")
         case .unitsTitle:
             return localizeString("unitsTitle", comment: "Units title")
         case .amountTitle:

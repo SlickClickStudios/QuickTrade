@@ -8,13 +8,43 @@
 
 import UIKit
 
+public enum TextInputViewMode {
+    case units,
+    currency
+}
+
+protocol TextInputViewDelegate: AnyObject {
+    func textInputViewDidUpdate(text: String, mode: TextInputViewMode)
+}
+
 final class TextInputView: UIView {
     /// Outlets
     @IBOutlet private var containerView: UIView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var textField: UITextField!
     
+    /// Constants
+    let unitEntryCap = 8
+    let amountEntryCap = 15
+    
     /// Properties
+    weak var delegate: TextInputViewDelegate?
+    var numberOfDigits: Int = 0
+    
+    public var hasEnteredText: Bool  {
+        get {
+            guard let text = textField.text else { return false }
+            return text.isEmpty ? false : true
+        }
+    }
+    
+    public var mode: TextInputViewMode = .units {
+        didSet {
+            numberOfDigits = mode == .units ? unitEntryCap : amountEntryCap
+            textField.keyboardType = mode == .units ? .numberPad : .decimalPad
+        }
+    }
+    
     public var title: String = "" {
         didSet {
             titleLabel.text = title
@@ -48,6 +78,14 @@ final class TextInputView: UIView {
         setStyle()
     }
     
+    public func bind(text: String) {
+        textField.text = text
+    }
+    
+    public override func resignFirstResponder() -> Bool {
+           return textField.resignFirstResponder()
+    }
+    
     // MARK: - Private routines
     
     private func setupViews() {
@@ -71,13 +109,12 @@ final class TextInputView: UIView {
         titleLabel.textAlignment = .center
         titleLabel.textColor = DefaultColor().seaBlue
         textField.textColor = .white
-        textField.backgroundColor = DefaultColor().darkGray
+        textField.backgroundColor = DefaultColor().inputBackground
         
         /// Setup textField
         textField.layer.cornerRadius = Dimension().inputViewRadius
         textField.layer.masksToBounds = false
         textField.textAlignment = .center
-        textField.keyboardType = .asciiCapableNumberPad
         textField.delegate = self
     }
 }
@@ -86,6 +123,21 @@ extension TextInputView: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         isInputFocused = true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text,
+            let textRange = Range(range, in: text)
+            else { return false }
+        
+        let finalString = text.replacingCharacters(in: textRange, with: string)
+        
+        guard finalString.count <= numberOfDigits else { return false }
+        
+        /// Ask delegate to update relative TextInputViews
+        delegate?.textInputViewDidUpdate(text: finalString, mode: mode)
+        
+        return true
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {

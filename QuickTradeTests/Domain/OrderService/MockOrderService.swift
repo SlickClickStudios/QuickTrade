@@ -25,7 +25,7 @@ final class MockOrderService: OrderService {
 
     */
     override func request<T>(for endpoint: QuickTradeEndpoint,
-                             result: T.Type,
+                             model: T.Type,
                              completion: @escaping (Result<T>) -> Void) where T : Codable {
         guard let path = stubs.path else {
             /// Error encountered in determining path for JSON file, return error

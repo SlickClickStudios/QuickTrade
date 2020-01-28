@@ -13,21 +13,11 @@ public enum PanelMode: String {
     case sell = "SELL"
 }
 
-public struct PricePanelViewModel {
-    public let title: String
-    public let price: String
-    public let historicalPrice: String
-    public let mode: PanelMode
-    
-    public init(title: String,
-                price: String,
-                historicalPrice: String,
-                mode: PanelMode) {
-        self.title = title
-        self.price = price
-        self.historicalPrice = historicalPrice
-        self.mode = mode
-    }
+public protocol PricePanelViewDataSource {
+    var title: String { get }
+    var price: String { get }
+    var historicalPrice: String { get }
+    var mode: PanelMode { get }
 }
 
 final class PricePanelView: UIView {
@@ -66,11 +56,14 @@ final class PricePanelView: UIView {
     
     // MARK: - Public routine
     
-    public func bind(datasource: PricePanelViewModel) {
+    public func bind(datasource: PricePanelViewDataSource) {
         titleLabel.text = datasource.title
-        priceLabel.text = datasource.price
+        
         historicalPriceLabel.text = datasource.historicalPrice
+        
         mode = datasource.mode
+        
+        animate(price: formattedPrice(for: datasource.price))
     }
     
     // MARK: - Private routines
@@ -99,5 +92,36 @@ final class PricePanelView: UIView {
         /// Setup colors
         historicalPriceLabel.textColor = DefaultColor().muted
         priceLabel.textColor = DefaultColor().green
+    }
+    
+    private func formattedPrice(for text: String) -> NSAttributedString {
+        let font = UIFont.preferredFont(forTextStyle: .title1)
+        let subscriptFont = UIFont.preferredFont(forTextStyle: .title3)
+        let location = text.count - 2
+        
+        let mutablePriceString = NSMutableAttributedString(string: text, attributes: [.font: font])
+        mutablePriceString.setAttributes([.font: subscriptFont, .baselineOffset: 0],
+                                         range: NSRange(location: location, length: 2))
+        return mutablePriceString
+    }
+    
+    private func animate(price: NSAttributedString) {
+        priceLabel.alpha = 0.0;
+        priceLabel.attributedText = price
+        
+        UIView.animate(withDuration: 0.3,
+            delay: 0.0,
+            options: [.curveEaseInOut, .autoreverse],
+            animations: {  self.priceLabel.alpha = 1.0 },
+            completion: { ( status) in
+                self.priceLabel.alpha = 0.5
+                self.priceLabel.textColor = DefaultColor().lightGreen
+        })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+            self.priceLabel.textColor = DefaultColor().green
+            self.priceLabel.alpha = 1.0
+            self.priceLabel.attributedText = price
+        }
     }
 }

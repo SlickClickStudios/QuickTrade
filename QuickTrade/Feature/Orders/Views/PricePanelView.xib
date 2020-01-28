@@ -17,11 +17,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="821" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="821" height="82"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss2-Wc-D7T">
-                    <rect key="frame" x="16" y="8" width="789" height="18"/>
+                    <rect key="frame" x="8" y="4" width="805" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" priority="250" constant="21" id="VVj-Al-prC"/>
                     </constraints>
@@ -32,14 +32,14 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7777" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTL-fy-td1">
                     <rect key="frame" x="16" y="34" width="789" height="20.5"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20.5" id="fBp-n9-uDE"/>
+                        <constraint firstAttribute="height" priority="750" constant="24" id="fBp-n9-uDE"/>
                     </constraints>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wewewe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUc-hd-YSl">
-                    <rect key="frame" x="16" y="62.5" width="789" height="11.5"/>
+                    <rect key="frame" x="8" y="66.5" width="805" height="11.5"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -47,15 +47,15 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Ss2-Wc-D7T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="2oP-rb-qSt"/>
-                <constraint firstItem="QTL-fy-td1" firstAttribute="top" secondItem="Ss2-Wc-D7T" secondAttribute="bottom" constant="8" id="3Jw-ha-3ID"/>
-                <constraint firstItem="rUc-hd-YSl" firstAttribute="top" secondItem="QTL-fy-td1" secondAttribute="bottom" constant="8" id="3xQ-A5-9N1"/>
-                <constraint firstAttribute="trailing" secondItem="Ss2-Wc-D7T" secondAttribute="trailing" constant="16" id="5MK-11-2uU"/>
-                <constraint firstItem="Ss2-Wc-D7T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Dws-e3-HKT"/>
+                <constraint firstItem="Ss2-Wc-D7T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2oP-rb-qSt"/>
+                <constraint firstItem="QTL-fy-td1" firstAttribute="top" secondItem="Ss2-Wc-D7T" secondAttribute="bottom" constant="12" id="3Jw-ha-3ID"/>
+                <constraint firstItem="rUc-hd-YSl" firstAttribute="top" secondItem="QTL-fy-td1" secondAttribute="bottom" constant="12" id="3xQ-A5-9N1"/>
+                <constraint firstAttribute="trailing" secondItem="Ss2-Wc-D7T" secondAttribute="trailing" constant="8" id="5MK-11-2uU"/>
+                <constraint firstItem="Ss2-Wc-D7T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="Dws-e3-HKT"/>
                 <constraint firstAttribute="trailing" secondItem="QTL-fy-td1" secondAttribute="trailing" constant="16" id="NES-AY-BKv"/>
-                <constraint firstItem="rUc-hd-YSl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Yb6-0A-VXr"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rUc-hd-YSl" secondAttribute="trailing" constant="16" id="riD-1k-w1x"/>
-                <constraint firstAttribute="bottom" secondItem="rUc-hd-YSl" secondAttribute="bottom" constant="16" id="sO7-Qk-BaV"/>
+                <constraint firstItem="rUc-hd-YSl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="Yb6-0A-VXr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rUc-hd-YSl" secondAttribute="trailing" constant="8" id="riD-1k-w1x"/>
+                <constraint firstAttribute="bottom" secondItem="rUc-hd-YSl" secondAttribute="bottom" constant="4" id="sO7-Qk-BaV"/>
                 <constraint firstItem="QTL-fy-td1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="vwk-Og-cC0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

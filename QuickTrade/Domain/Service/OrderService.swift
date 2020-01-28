@@ -19,7 +19,7 @@ class OrderService {
      
      */
     func request<T>(for endpoint: QuickTradeEndpoint,
-                    result: T.Type,
+                    model: T.Type,
                     completion: @escaping (Result<T>) -> Void) where T: Codable {
         
         /// Get urlRequest object for given endpoint
@@ -52,10 +52,10 @@ class OrderService {
 }
 
 extension OrderService: OrderServiceProvider {
-    func exchangeRates<T>(result: T.Type,
+    func exchangeRates<T>(model: T.Type,
                           completion: @escaping (Result<T>) -> Void) where T: Codable {
         
         /// Get latest exchange rates
-        request(for: .latestCurrencyRates, result: result, completion: completion)
+        request(for: .latestCurrencyRates, model: model, completion: completion)
     }
 }

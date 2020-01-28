@@ -56,7 +56,7 @@ final class ActionViews: UIView {
         add(containerView)
         
         containerView.backgroundColor = .black
-        mainView.backgroundColor = DefaultColor().darkGray
+        mainView.backgroundColor = DefaultColor().actionViewBackground
         
         titleLabel.text = ""
         

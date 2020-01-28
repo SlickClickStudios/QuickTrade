@@ -28,7 +28,7 @@ class OrderServiceMockTests: XCTestCase {
         /// Set stubs variable to 'tickerSuccess'
         mockOrderService?.stubs = .tickerSuccess
         
-        mockOrderService?.exchangeRates(result: Rates.self, completion: { result in
+        mockOrderService?.exchangeRates(model: Rates.self, completion: { result in
             
             /// Validate result object
             switch result {
@@ -67,7 +67,7 @@ class OrderServiceMockTests: XCTestCase {
         mockOrderService?.stubs = .tickerMalformed
         
         /// Validate result object
-        mockOrderService?.exchangeRates(result: Rates.self, completion: { result in
+        mockOrderService?.exchangeRates(model: Rates.self, completion: { result in
             
             switch result {
                 

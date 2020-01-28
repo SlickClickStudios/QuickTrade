@@ -3,6 +3,12 @@
  */
 
 /// UI
+"comingSoonAlertTitle" = "Coming Soon";
+"featureAvailiabilityAlertMessage" = "This feature will be available in next release.";
+
+"buyTitle" = "BUY";
+"sellTitle" = "SELL";
+
 "cancelTitle" = "Cancel";
 "confirmTitle" = "Confirm";
 

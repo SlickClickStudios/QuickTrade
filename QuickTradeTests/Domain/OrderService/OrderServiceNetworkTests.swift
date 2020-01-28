@@ -25,7 +25,7 @@ class OrderServiceNetworkTests: XCTestCase {
     func testOrderService_success() {
         let expectation = self.expectation(description: "Get latest Exchange rates successfully")
         
-        orderService?.exchangeRates(result: Rates.self, completion: { result in
+        orderService?.exchangeRates(model: Rates.self, completion: { result in
             
             /// Validate result object
             switch result {
@@ -59,7 +59,7 @@ class OrderServiceNetworkTests: XCTestCase {
     func testOrderService_jsonSerializationError() {
         let expectation = self.expectation(description: "Get malformed JSON error")
         
-        orderService?.exchangeRates(result: Currency.self, completion: { result in
+        orderService?.exchangeRates(model: Currency.self, completion: { result in
             
             /// Validate result object
             switch result {

@@ -10,6 +10,6 @@ import Foundation
 
 public protocol OrderServiceProvider {
     /// Gets latest exchanges rates for a set of currencies
-    func exchangeRates<T: Codable>(result: T.Type,
+    func exchangeRates<T: Codable>(model: T.Type,
                                    completion: @escaping (Result<T>) -> Void)
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2TN-2O-xoa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -10,13 +10,13 @@
         <!--Order Ticket View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OrderTicketViewController" customModule="QuickTrade" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderTicketViewController" id="BYZ-38-t0r" customClass="OrderTicketViewController" customModule="QuickTrade" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OzL-6A-I4d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="739"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5FZ-Ru-YeS">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
@@ -83,7 +83,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5FZ-Ru-YeS" firstAttribute="leading" secondItem="OzL-6A-I4d" secondAttribute="leading" id="4Tm-3l-Fod"/>
-                                    <constraint firstAttribute="height" constant="769" id="BbD-93-bcb"/>
+                                    <constraint firstAttribute="height" priority="250" constant="739" id="BbD-93-bcb"/>
                                     <constraint firstItem="5FZ-Ru-YeS" firstAttribute="trailing" secondItem="OzL-6A-I4d" secondAttribute="trailing" id="ME0-nF-Ilf"/>
                                     <constraint firstItem="5FZ-Ru-YeS" firstAttribute="top" secondItem="OzL-6A-I4d" secondAttribute="top" id="brC-Ix-RCG"/>
                                     <constraint firstAttribute="bottom" secondItem="5FZ-Ru-YeS" secondAttribute="bottom" id="hjO-Im-GJh"/>
@@ -94,46 +94,53 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="NTq-Jt-hh2"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDn-86-YOS">
-                                <rect key="frame" x="16" y="829" width="382" height="49"/>
+                                <rect key="frame" x="16" y="799" width="382" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYC-Bv-Oco" customClass="PrimaryButton" customModule="QuickTrade" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="183" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="09s-vb-hha"/>
+                                            <constraint firstAttribute="height" constant="48" id="09s-vb-hha"/>
                                             <constraint firstAttribute="width" priority="250" constant="183" id="AEb-lw-N8d"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didTapCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tke-qj-E5W"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkP-sZ-pHr" customClass="PrimaryButton" customModule="QuickTrade" customModuleProvider="target">
-                                        <rect key="frame" x="199" y="0.0" width="183" height="49"/>
+                                        <rect key="frame" x="199" y="0.0" width="183" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="yqR-Zn-NHW"/>
+                                            <constraint firstAttribute="height" constant="48" id="yqR-Zn-NHW"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didTapConfirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUo-SF-O2G"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="bkP-sZ-pHr" secondAttribute="bottom" id="8ZY-qF-Jq0"/>
+                                    <constraint firstAttribute="height" constant="48" id="57C-xe-sX6"/>
                                     <constraint firstItem="PYC-Bv-Oco" firstAttribute="width" secondItem="bkP-sZ-pHr" secondAttribute="width" id="96E-G8-6zI"/>
-                                    <constraint firstItem="PYC-Bv-Oco" firstAttribute="top" secondItem="YDn-86-YOS" secondAttribute="top" id="GMR-TG-XOC"/>
+                                    <constraint firstAttribute="bottom" secondItem="PYC-Bv-Oco" secondAttribute="bottom" id="AG9-9O-BL6"/>
+                                    <constraint firstAttribute="bottom" secondItem="bkP-sZ-pHr" secondAttribute="bottom" id="CRO-Nh-ISI"/>
+                                    <constraint firstItem="PYC-Bv-Oco" firstAttribute="top" secondItem="YDn-86-YOS" secondAttribute="top" id="Esu-w8-uO5"/>
+                                    <constraint firstItem="PYC-Bv-Oco" firstAttribute="leading" secondItem="YDn-86-YOS" secondAttribute="leading" id="Ken-U0-f9y"/>
+                                    <constraint firstAttribute="trailing" secondItem="bkP-sZ-pHr" secondAttribute="trailing" id="Qbb-d7-pua"/>
                                     <constraint firstItem="bkP-sZ-pHr" firstAttribute="leading" secondItem="PYC-Bv-Oco" secondAttribute="trailing" constant="16" id="T9Y-Qr-AXi"/>
-                                    <constraint firstAttribute="trailing" secondItem="bkP-sZ-pHr" secondAttribute="trailing" id="a41-TQ-1YB"/>
-                                    <constraint firstItem="bkP-sZ-pHr" firstAttribute="top" secondItem="YDn-86-YOS" secondAttribute="top" id="d1C-55-Xxo"/>
-                                    <constraint firstItem="PYC-Bv-Oco" firstAttribute="leading" secondItem="YDn-86-YOS" secondAttribute="leading" id="ezd-1w-aon"/>
-                                    <constraint firstAttribute="bottom" secondItem="PYC-Bv-Oco" secondAttribute="bottom" id="k7g-Bb-HSe"/>
+                                    <constraint firstItem="bkP-sZ-pHr" firstAttribute="top" secondItem="YDn-86-YOS" secondAttribute="top" id="ZVe-y0-nk8"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YDn-86-YOS" secondAttribute="trailing" constant="16" id="2sa-7T-4w3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YDn-86-YOS" secondAttribute="bottom" constant="15" id="4Hh-2L-jOt"/>
                             <constraint firstItem="OzL-6A-I4d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BOT-G5-NSt"/>
-                            <constraint firstItem="YDn-86-YOS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="16" id="FLS-XV-xPS"/>
+                            <constraint firstItem="YDn-86-YOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E1H-VT-x8c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YDn-86-YOS" secondAttribute="trailing" constant="16" id="FCo-9V-3VL"/>
+                            <constraint firstItem="YDn-86-YOS" firstAttribute="top" secondItem="OzL-6A-I4d" secondAttribute="bottom" constant="16" id="Z0o-sM-5lY"/>
                             <constraint firstAttribute="trailing" secondItem="OzL-6A-I4d" secondAttribute="trailing" id="aPg-B8-g9X"/>
-                            <constraint firstItem="YDn-86-YOS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="d5k-y6-ySI"/>
                             <constraint firstItem="OzL-6A-I4d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m0L-NT-F91"/>
-                            <constraint firstItem="YDn-86-YOS" firstAttribute="top" secondItem="OzL-6A-I4d" secondAttribute="bottom" constant="16" id="tOP-i8-6dj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -143,6 +150,7 @@
                         <outlet property="buyPricePanelView" destination="kwQ-PW-Ouv" id="srj-Sw-dED"/>
                         <outlet property="cancelButton" destination="PYC-Bv-Oco" id="Fk6-GV-Sx5"/>
                         <outlet property="confirmButton" destination="bkP-sZ-pHr" id="16N-Yp-Pxd"/>
+                        <outlet property="scrollView" destination="OzL-6A-I4d" id="v2A-Jx-8y6"/>
                         <outlet property="sellPricePanelView" destination="clS-xf-bOW" id="WxW-YV-mZj"/>
                         <outlet property="stopLossActionView" destination="udS-UR-Zsg" id="vYd-Fb-sKh"/>
                         <outlet property="takeProfitActionView" destination="pV8-Fw-5R8" id="e9F-as-btt"/>
@@ -152,6 +160,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="vsP-fK-IZu">
+            <objects>
+                <viewController id="sGn-CP-1az" customClass="ProductsViewController" customModule="QuickTrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UXq-an-DXp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xb1-66-dnb">
+                                <rect key="frame" x="0.0" y="128" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBp-y1-ug4">
+                                        <rect key="frame" x="16" y="19.5" width="100" height="41"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKp-ED-9Mg" customClass="PrimaryButton" customModule="QuickTrade" customModuleProvider="target">
+                                        <rect key="frame" x="318" y="8" width="80" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="NKt-wR-3bN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="BUY"/>
+                                        <connections>
+                                            <action selector="buyButtonTapped:" destination="sGn-CP-1az" eventType="touchUpInside" id="BIA-Io-rO1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.16862745100000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qKp-ED-9Mg" firstAttribute="top" secondItem="xb1-66-dnb" secondAttribute="top" constant="8" id="3NZ-tj-L6m"/>
+                                    <constraint firstAttribute="trailing" secondItem="qKp-ED-9Mg" secondAttribute="trailing" constant="16" id="6pH-2F-swv"/>
+                                    <constraint firstItem="WBp-y1-ug4" firstAttribute="centerY" secondItem="xb1-66-dnb" secondAttribute="centerY" id="Qeb-am-fTs"/>
+                                    <constraint firstItem="WBp-y1-ug4" firstAttribute="leading" secondItem="xb1-66-dnb" secondAttribute="leading" constant="16" id="RRW-kl-MQn"/>
+                                    <constraint firstAttribute="bottom" secondItem="qKp-ED-9Mg" secondAttribute="bottom" constant="8" id="aYE-gl-08O"/>
+                                    <constraint firstItem="qKp-ED-9Mg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WBp-y1-ug4" secondAttribute="trailing" constant="16" id="s5Z-01-doJ"/>
+                                    <constraint firstAttribute="height" constant="80" id="zNr-9l-Zfn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.29411764709999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xb1-66-dnb" secondAttribute="trailing" id="2OP-Kb-bo1"/>
+                            <constraint firstItem="xb1-66-dnb" firstAttribute="top" secondItem="T2Z-Kl-rZc" secondAttribute="top" constant="40" id="4o7-te-VKu"/>
+                            <constraint firstItem="xb1-66-dnb" firstAttribute="leading" secondItem="UXq-an-DXp" secondAttribute="leading" id="xJW-gg-TLy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T2Z-Kl-rZc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Products" id="5pi-ae-XP2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3d-1G-S4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="-547.09821428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vu8-F2-8jq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2TN-2O-xoa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nV0-hd-F2Z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sGn-CP-1az" kind="relationship" relationship="rootViewController" id="buV-UR-Dhn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oah-PU-9Pb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="-547.09821428571422"/>
         </scene>
     </scenes>
 </document>
