@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18258AFF23DE49E4008BC327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258AFE23DE49E4008BC327 /* AppDelegate.swift */; };
 		18258B0123DE49E4008BC327 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B0023DE49E4008BC327 /* SceneDelegate.swift */; };
-		18258B0323DE49E4008BC327 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258B0223DE49E4008BC327 /* ViewController.swift */; };
 		18258B0623DE49E4008BC327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18258B0423DE49E4008BC327 /* Main.storyboard */; };
 		18258B0823DE49E5008BC327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18258B0723DE49E5008BC327 /* Assets.xcassets */; };
 		18258B0B23DE49E5008BC327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18258B0923DE49E5008BC327 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,17 @@
 		18258BA023DE7476008BC327 /* tickerMalformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 18258B9E23DE7476008BC327 /* tickerMalformed.json */; };
 		18258BA323DE7E99008BC327 /* OrderServiceMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */; };
 		18258BA523DE8ED5008BC327 /* ServiceErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */; };
+		18C0A19A23DF970000770E4A /* PricePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A19923DF970000770E4A /* PricePanelView.swift */; };
+		18C0A1A123DF97CD00770E4A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1A023DF97CD00770E4A /* UIView+Extension.swift */; };
+		18C0A1A323DF980C00770E4A /* PricePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C0A1A223DF980C00770E4A /* PricePanelView.xib */; };
+		18C0A1A523DF9D6300770E4A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1A423DF9D6300770E4A /* Theme.swift */; };
+		18C0A1A823DFA28600770E4A /* OrderTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1A723DFA28600770E4A /* OrderTicketViewController.swift */; };
+		18C0A1AA23DFA29F00770E4A /* OrderTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1A923DFA29F00770E4A /* OrderTicketViewModel.swift */; };
+		18C0A1AC23DFAC6000770E4A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1AB23DFAC6000770E4A /* PrimaryButton.swift */; };
+		18C0A1AE23DFB90300770E4A /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1AD23DFB90300770E4A /* TextInputView.swift */; };
+		18C0A1B023DFB91400770E4A /* TextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C0A1AF23DFB91400770E4A /* TextInputView.xib */; };
+		18C0A1B223DFC61C00770E4A /* ActionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0A1B123DFC61C00770E4A /* ActionViews.swift */; };
+		18C0A1B423DFC62C00770E4A /* ActionViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C0A1B323DFC62C00770E4A /* ActionViews.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +65,6 @@
 		18258AFB23DE49E4008BC327 /* QuickTrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18258AFE23DE49E4008BC327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18258B0023DE49E4008BC327 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18258B0223DE49E4008BC327 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18258B0523DE49E4008BC327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18258B0723DE49E5008BC327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18258B0A23DE49E5008BC327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +92,17 @@
 		18258B9E23DE7476008BC327 /* tickerMalformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickerMalformed.json; sourceTree = "<group>"; };
 		18258BA223DE7E99008BC327 /* OrderServiceMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderServiceMockTests.swift; sourceTree = "<group>"; };
 		18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorTests.swift; sourceTree = "<group>"; };
+		18C0A19923DF970000770E4A /* PricePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricePanelView.swift; sourceTree = "<group>"; };
+		18C0A1A023DF97CD00770E4A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		18C0A1A223DF980C00770E4A /* PricePanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PricePanelView.xib; sourceTree = "<group>"; };
+		18C0A1A423DF9D6300770E4A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		18C0A1A723DFA28600770E4A /* OrderTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTicketViewController.swift; sourceTree = "<group>"; };
+		18C0A1A923DFA29F00770E4A /* OrderTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTicketViewModel.swift; sourceTree = "<group>"; };
+		18C0A1AB23DFAC6000770E4A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		18C0A1AD23DFB90300770E4A /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		18C0A1AF23DFB91400770E4A /* TextInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputView.xib; sourceTree = "<group>"; };
+		18C0A1B123DFC61C00770E4A /* ActionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViews.swift; sourceTree = "<group>"; };
+		18C0A1B323DFC62C00770E4A /* ActionViews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionViews.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +155,6 @@
 			children = (
 				18258AFE23DE49E4008BC327 /* AppDelegate.swift */,
 				18258B0023DE49E4008BC327 /* SceneDelegate.swift */,
-				18258B0223DE49E4008BC327 /* ViewController.swift */,
 				18258B2F23DE4A6F008BC327 /* Feature */,
 				18258B2E23DE4A6A008BC327 /* Domain */,
 				18258B0723DE49E5008BC327 /* Assets.xcassets */,
@@ -178,6 +197,8 @@
 		18258B2F23DE4A6F008BC327 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				18C0A1A623DFA24A00770E4A /* Theme */,
+				18C0A19F23DF97A400770E4A /* Extensions */,
 				18258B7423DE4BED008BC327 /* Storyboard */,
 				18258B7323DE4BE0008BC327 /* Localization */,
 				18258B6F23DE4AF8008BC327 /* Orders */,
@@ -188,6 +209,7 @@
 		18258B6C23DE4AD4008BC327 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18C0A1A723DFA28600770E4A /* OrderTicketViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +217,7 @@
 		18258B6D23DE4AD9008BC327 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				18C0A1A923DFA29F00770E4A /* OrderTicketViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -202,6 +225,13 @@
 		18258B6E23DE4ADC008BC327 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18C0A19923DF970000770E4A /* PricePanelView.swift */,
+				18C0A1A223DF980C00770E4A /* PricePanelView.xib */,
+				18C0A1AB23DFAC6000770E4A /* PrimaryButton.swift */,
+				18C0A1AD23DFB90300770E4A /* TextInputView.swift */,
+				18C0A1AF23DFB91400770E4A /* TextInputView.xib */,
+				18C0A1B123DFC61C00770E4A /* ActionViews.swift */,
+				18C0A1B323DFC62C00770E4A /* ActionViews.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +335,22 @@
 				18258BA423DE8ED5008BC327 /* ServiceErrorTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		18C0A19F23DF97A400770E4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18C0A1A023DF97CD00770E4A /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18C0A1A623DFA24A00770E4A /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				18C0A1A423DF9D6300770E4A /* Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,8 +457,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C0A1B423DFC62C00770E4A /* ActionViews.xib in Resources */,
 				18258B0B23DE49E5008BC327 /* LaunchScreen.storyboard in Resources */,
 				18258B8A23DE5B9C008BC327 /* Localizable.strings in Resources */,
+				18C0A1B023DFB91400770E4A /* TextInputView.xib in Resources */,
+				18C0A1A323DF980C00770E4A /* PricePanelView.xib in Resources */,
 				18258B0823DE49E5008BC327 /* Assets.xcassets in Resources */,
 				18258B0623DE49E4008BC327 /* Main.storyboard in Resources */,
 			);
@@ -444,14 +493,21 @@
 				18258B7A23DE538F008BC327 /* ServiceError.swift in Sources */,
 				18258B8223DE5796008BC327 /* OrderServiceProvider.swift in Sources */,
 				18258B8C23DE5BEC008BC327 /* LocalizedString.swift in Sources */,
-				18258B0323DE49E4008BC327 /* ViewController.swift in Sources */,
+				18C0A1A123DF97CD00770E4A /* UIView+Extension.swift in Sources */,
+				18C0A1A823DFA28600770E4A /* OrderTicketViewController.swift in Sources */,
 				18258B7E23DE5439008BC327 /* Network.swift in Sources */,
 				18258B9023DE67E6008BC327 /* Rates.swift in Sources */,
 				18258B7623DE4D05008BC327 /* QuickTradeEndpoint.swift in Sources */,
 				18258B7823DE4FBB008BC327 /* ServiceRequestBuilder.swift in Sources */,
+				18C0A1AE23DFB90300770E4A /* TextInputView.swift in Sources */,
+				18C0A1B223DFC61C00770E4A /* ActionViews.swift in Sources */,
+				18C0A1A523DF9D6300770E4A /* Theme.swift in Sources */,
 				18258B8423DE585F008BC327 /* OrderService.swift in Sources */,
+				18C0A19A23DF970000770E4A /* PricePanelView.swift in Sources */,
 				18258B7C23DE53D7008BC327 /* Result.swift in Sources */,
 				18258AFF23DE49E4008BC327 /* AppDelegate.swift in Sources */,
+				18C0A1AA23DFA29F00770E4A /* OrderTicketViewModel.swift in Sources */,
+				18C0A1AC23DFAC6000770E4A /* PrimaryButton.swift in Sources */,
 				18258B9723DE6E0A008BC327 /* JSONDecoder+Extensions.swift in Sources */,
 				18258B0123DE49E4008BC327 /* SceneDelegate.swift in Sources */,
 			);

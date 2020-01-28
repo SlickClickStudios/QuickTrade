@@ -2,11 +2,20 @@
  Localised.strings file
  */
 
+/// UI
+"cancelTitle" = "Cancel";
+"confirmTitle" = "Confirm";
+
+"stopLossTitle" = "+ Stop Loss";
+"takeProfitTitle" = "+ Take Profit";
+
+"unitsTitle" = "Units";
+"amountTitle" = "Amount";
+"amountCurrencyTitle" = "Amount(%@)";
+
 /// Service Errors
 "incorrectRequestErrorMessage" = "Please check your request and try again.";
 "genericErrorMessage" = "Something went wrong. Please try again.";
-
-
 
 /// Mock testing errors
 "jsonNotFoundMessage" = "Unable to find mock json.";

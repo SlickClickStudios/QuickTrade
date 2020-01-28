@@ -9,6 +9,15 @@
 import UIKit
 
 enum LocalizedString: CustomStringConvertible {
+    /// UI
+    case cancelTitle
+    case confirmTitle
+    case stopLossTitle
+    case takeProfitTitle
+    case unitsTitle
+    case amountTitle
+    case amountCurrencyTitle(String)
+    
     /// Network Service errors
     case genericError
     case incorrectRequest
@@ -18,6 +27,22 @@ enum LocalizedString: CustomStringConvertible {
     
     var description: String {
         switch self {
+        /// UI
+        case .cancelTitle:
+            return localizeString("cancelTitle", comment: "Cancel title")
+        case .confirmTitle:
+            return localizeString("confirmTitle", comment: "Confirm title")
+        case .stopLossTitle:
+             return localizeString("stopLossTitle", comment: "Stop Loss title")
+        case .takeProfitTitle:
+             return localizeString("takeProfitTitle", comment: "Take Profit title")
+        case .unitsTitle:
+            return localizeString("unitsTitle", comment: "Units title")
+        case .amountTitle:
+            return localizeString("amountTitle", comment: "Amount title")
+        case let .amountCurrencyTitle(text):
+            return localizeString("amountCurrencyTitle", comment: "Amount title with currency", text)
+            
         /// Network Service errors
         case .genericError:
             return localizeString("genericErrorMessage", comment: "Network service default error message")

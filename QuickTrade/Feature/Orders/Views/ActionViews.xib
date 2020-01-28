@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionViews" customModule="QuickTrade" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="PiF-c3-kv8"/>
+                <outlet property="mainView" destination="Wv2-Qb-1n7" id="2oh-QM-5f6"/>
+                <outlet property="titleLabel" destination="ATw-tR-4o3" id="6aA-Xf-zVz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="688" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv2-Qb-1n7">
+                    <rect key="frame" x="0.0" y="0.0" width="688" height="58"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ Stop Loss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATw-tR-4o3">
+                            <rect key="frame" x="16" y="19" width="656" height="20.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ATw-tR-4o3" secondAttribute="trailing" constant="16" id="8iv-XM-eWL"/>
+                        <constraint firstItem="ATw-tR-4o3" firstAttribute="centerY" secondItem="Wv2-Qb-1n7" secondAttribute="centerY" id="tKu-49-2X2"/>
+                        <constraint firstItem="ATw-tR-4o3" firstAttribute="leading" secondItem="Wv2-Qb-1n7" secondAttribute="leading" constant="16" id="uf5-cr-SUU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Wv2-Qb-1n7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0D5-J9-U8m"/>
+                <constraint firstAttribute="bottom" secondItem="Wv2-Qb-1n7" secondAttribute="bottom" constant="2" id="3Dp-fb-g9K"/>
+                <constraint firstItem="Wv2-Qb-1n7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qqK-Yv-nUQ"/>
+                <constraint firstAttribute="trailing" secondItem="Wv2-Qb-1n7" secondAttribute="trailing" id="vfz-jG-Gvn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="430" y="-97"/>
+        </view>
+    </objects>
+</document>
